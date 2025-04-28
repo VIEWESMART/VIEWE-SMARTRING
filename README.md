@@ -1,7 +1,7 @@
-<h1 align = "center">UEDX46460015-MD50ESP32-1.5inch-Touch-Knob-Display</h1>
+<h1 align = "center">SmartRing</h1>
 
 <p align="center" width="90%">
-    <img src="image/1.5.jpg" alt="">
+    <img src="image/smartring.png" alt="">
 </p>
 
 ## **English | [中文](./README_CN.md)**
@@ -21,13 +21,13 @@
 ## Version iteration:
 |   Development board Version   |  Screen size   |   Resolution  | Update date        |Update description|
 | :-------------------------------: | :-------------------------------: | :-------------------------------: | :-------------------------------: |:-------------------------------: |
-| UEDX46460015-MD50E | 2.1-inch |  466*466  |2024-07-23      | Original version   |
+| SMARTRING | 1.75-inch |  466*466  |2024-07-23      | Original version   |
 
 ## PurchaseLink
 
 | Product                     | SOC           |  FLASH  |  PSRAM   | Link                   |
 | :------------------------: | :-----------: |:-------: | :---------: | :------------------: |
-| UEDX46460015-MD50E   | ESP32S3R8 |   16M   | 8M (Octal SPI) | [VIEWE Mall](https://viewedisplay.com/product/esp32-7-inch-800x480-rgb-ips-tft-display-touch-screen-arduino-lvgl-uart/)  |
+| SMARTRING   | ESP32S3R8 |   16M   | 8M (Octal SPI) |  |
 
 ## Directory
 - [Describe](#describe)
@@ -41,7 +41,7 @@
 
 ## Describe
 
-UEDX48480021-MD80ESP32_2.1inch-Knob-Display is a development board with square 2.1-inch 480 * 480 resolution display, based on ESP32S3, suitable for the development of microcontroller projects with display.
+SMARTRING is a development board with square 1.75-inch 466 * 466 resolution display, based on ESP32S3, suitable for the development of microcontroller projects with display.
 
 
 ## Module
@@ -55,51 +55,53 @@ UEDX48480021-MD80ESP32_2.1inch-Knob-Display is a development board with square 2
 
 ### 2. Screen
 
-* Size: 2.1-inch IPS screen
+* Size: 1.75-inch AMOLED screen
 * Resolution: 466x466px
 * Screen type: IPS
-* Driver chip: CO5300AF-42
+* Driver chip: CO5300
 * Compatibility library:  ESP32_Display_Panel
 * Bus communication protocol: QSPI
 
 ### 3. Touch
 
-* Touch Chip: CST820
+* Touch Chip: CST9217
 * Bus communication protocol: IIC
 
 ## PinOverview
 
-| IPS Screen Pin  | ESP32S3 Pin|
-| :------------------: | :------------------:|
-| CS            | IO12    |
-| PCLK          | IO10    |
-|   DATA0       |  IO13   |
-|   DATA1       |  IO11   |
-|   DATA2       |  IO14   |
-|   DATA3       |  IO9   |
-| RST        | IO8       |
-| BACKLIGHT  | IO7       |
-
-| Touch Pin  | ESP32S3 Pin|
-| :------------------: | :------------------:|
-|   SDA   | IO0   |
-|   SCL   | IO1   |
-|   RST   | IO3   |
-|   INT   | IO4   |
-
-| button Pin  | ESP32S3 Pin|
-| :------------------: | :------------------:|
-|   boot    | IO0       |
-
-| Encoder Pin  | ESP32S3 Pin|
-| :------------------: | :------------------:|
-| PHA         | IO6       |
-| PHB         | IO5       |
-
-| USB/UART Pin  | ESP32S3 Pin|
-| :------------------: | :------------------:|
-| USB-DN         | IO19      |
-| USB-DP         | IO20      |
+|ESP Pin NO.|	 FUNCTION|
+| :------------------------: | :-----------: |
+|GPIO0 | BOOT|
+|GPIO1 | SDMMC_D1|
+|GPIO2 | SDMMC_D0|
+|GPIO3 | SDMMC_SCK|
+|GPIO4 | SDMMC_CMD|
+|GPIO5 | SDMMC_D3|
+|GPIO6 | SDMMC_D2|
+|GPIO7 | LCD_QSPI_CS|
+|GPIO8 | LCD_QSPI_D1|
+|GPIO9 | LCD_QSPI_D3|
+|GPIO10 | LCD_TE|
+|GPIO11 | LCD_RST|
+|GPIO12	| LCD_QSPI_D0|
+|GPIO13 | LCD_QSPI_SCL|
+|GPIO14	| LCD_QSPI_D2|
+|GPIO15 | XSMT|
+|GPIO16	| I2S_DAC_LRCK/WS|
+|GPIO17 | I2S_DAC_DIN|
+|GPIO18 | I2S_DAC_BCK|
+|GPIO19 | USB_N|
+|GPIO20 | USB_P|
+|GPIO21 | IMU_INT1|
+|GPIO38 | IMU_INT2|
+|GPIO39 | RGB_DIN|
+|GPIO40 | LCD_VCIEN|
+|GPIO41 | TP_SDA|
+|GPIO42 | TP_INT|
+|GPIO43 | UART0_RX|
+|GPIO44	| UART0_TX|
+|GPIO45 | TP_SCL|
+|GPIO46	| TP_RST|
 
 ## QuickStart
 
@@ -107,8 +109,8 @@ UEDX48480021-MD80ESP32_2.1inch-Knob-Display is a development board with square 2
 
 | Example | Support IDE And Version| Description | Picture |
 | ------  | ------  | ------ | ------ | 
-| [ESP-IDF](./examples/ESP-IDF) | `[ESP-IDF V5.1/5.2/5.3]` | idf driver example code |  |
-| [SquareLinePorting](./examples/SquareLinePorting) | `[Arduino IDE][esp32_v2.0.14]` | SquareLine porting example for Arduino |  |
+| [ESP-IDF](./examples/dep-idf) | `[ESP-IDF V5.1/5.2/5.3]` | idf driver example code |  |
+| [SquareLinePorting](./examples/arduino) | `[Arduino IDE][esp32_v3.1.0]` | SquareLine porting example for Arduino |  |
 
 
 | Firmware | Description | Picture |
@@ -192,10 +194,7 @@ UEDX48480021-MD80ESP32_2.1inch-Knob-Display is a development board with square 2
 * Q. Why is my board continuously failing to download the program?
 * A. Please hold down the "BOOT" button and try downloading the program again.
 
-## Schematic
-<p align="center" width="100%">
-    <img src="schematic/1.5%20MD50E%20SCH.V2.0_00.png" alt="example">
-</p>
+## [Schematic]()
 
 ## Information
 [products specification](information/UEDX48480021-MD80E%20V3.3%20SPEC.pdf)
@@ -207,10 +206,8 @@ UEDX48480021-MD80ESP32_2.1inch-Knob-Display is a development board with square 2
 [Encoder](information/C219783_%E6%97%8B%E8%BD%AC%E7%BC%96%E7%A0%81%E5%99%A8_EC28A1520401_%E8%A7%84%E6%A0%BC%E4%B9%A6_WJ239718.PDF)
 
 ## DependentLibraries
-* [ESP32_Display_Panel>0.2.1](https://github.com/esp-arduino-libs/ESP32_Display_Panel) (Please [download](./Libraries/ESP32_Display_Panel) the library first as the latest version has not been released yet)
+* [ESP32_Display_Panel>1.0.1](https://github.com/esp-arduino-libs/ESP32_Display_Panel) (Please [download](./Libraries/ESP32_Display_Panel) the library first as the latest version has not been released yet)
 * [ESP32_IO_Expander](https://github.com/esp-arduino-libs/ESP32_IO_Expander) (Please [download](./Libraries/ESP32_IO_Expander) the library first as the latest version has not been released yet)
-* [ESP32_Button](https://github.com/esp-arduino-libs/ESP32_Button)
-* [ESP32_Knob](https://github.com/esp-arduino-libs/ESP32_Knob)
 * [lvgl-8.4.0](https://lvgl.io)
 
 
