@@ -70,6 +70,7 @@ SMARTRING is a development board with square 1.75-inch 466 * 466 resolution disp
 ## PinOverview
 
 |ESP Pin NO.|	 FUNCTION|
+| :------------------------: | :-----------: |
 |GPIO0 |	BOOT|
 |GPIO1 |SDMMC_D1|
 |GPIO2 |	SDMMC_D0|
