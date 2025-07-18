@@ -150,6 +150,7 @@ SMARTRING is a development board with square 1.75-inch 466 * 466 resolution disp
 - select `3.1.0` and above,click the `INSTALL` button to install
 
 3. **Install Required Libraries**
+   
   ESP32_Display_Panel and its dependencies are available in Arduino Library Manager. Install online:
 
   - In Arduino IDE, go to `Sketch` > `Include Library` > `Manage Libraries...`.
