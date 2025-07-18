@@ -45,6 +45,7 @@ The functional block diagram is shown below:
 * [ESP-IDF](./docs/envs/use_with_idf.md)
 * [Arduino IDE](./docs/envs/use_with_arduino.md)
 * [PlatformIO](./examples/platformio/lvgl_v8_port/README.md)
+* [Micropython](./docs/envs/use_with_micropython.md)
 
 ## Supported Boards
 
@@ -72,14 +73,14 @@ The functional block diagram is shown below:
 | **Manufacturer** | **Model** |
 | --------------- | --------- |
 | AXS | AXS15231B |
-| Fitipower | EK9716B、EK79007 |
-| GalaxyCore | GC9A01、GC9B71、GC9503 |
+| Fitipower | EK9716B,EK79007 |
+| GalaxyCore | GC9A01,GC9B71,GC9503 |
 | Himax | HX8399 |
-| Ilitek | ILI9341、ILI9881C |
-| JADARD | JD9165、JD9365 |
+| Ilitek | ILI9341,ILI9881C |
+| JADARD | JD9165,JD9365 |
 | NewVision | NV3022B |
 | SHENGHE | SH8601 |
-| Sitronix | ST7262、ST7701、ST7703、ST7789、ST7796、ST77903、ST77916、ST77922 |
+| Sitronix | ST7262,ST7701,ST7703,ST7789,ST7796,ST77903,ST77916,ST77922 |
 | Solomon Systech | SPD2010 |
 
 📌 For detailed information, please refer to [Supported LCD Controllers](./docs/drivers/lcd.md).
@@ -93,10 +94,10 @@ The functional block diagram is shown below:
 | AXS | AXS15231B |
 | Chipsemicorp | CHSC6540 |
 | FocalTech | FT5x06 |
-| GOODiX | GT911、GT1151 |
-| Hynitron | CST816S |
+| GOODiX | GT911,GT1151 |
+| Hynitron | CST816S,CST820 |
 | Parade | TT21100 |
-| Sitronix | ST7123、ST1633 |
+| Sitronix | ST7123,ST1633 |
 | Solomon Systech | SPD2010 |
 | ST | STMPE610 |
 | Xptek | XPT2046 |
@@ -115,9 +116,10 @@ The functional block diagram is shown below:
   * [How to select and configure supported boards in Arduino IDE?](./docs/envs/use_with_arduino.md#how-to-select-and-configure-supported-boards-in-arduino-ide)
   * [How to use SquareLine exported UI source files in Arduino IDE?](./docs/envs/use_with_arduino.md#how-to-use-squareline-exported-ui-source-files-in-arduino-ide)
   * [How to debug when the screen doesn't light up using the library in Arduino IDE?](./docs/envs/use_with_arduino.md#how-to-debug-when-the-screen-doesnt-light-up-using-the-library-in-arduino-ide)
-  * [How to reduce Flash usage and speed up compilation when using ESP32_Display_Panel in Arduino IDE?](./docs/envs/use_with_arduino.md#how-to-reduce-flash-usage-and-speed-up-compilation-when-using-esp32_display_panel-in-arduino-ide)
-  * [Can't see log messages or messages are incomplete in Arduino IDE's Serial Monitor, how to fix?](./docs/envs/use_with_arduino.md#can-t-see-log-messages-or-messages-are-incomplete-in-arduino-ides-serial-monitor-how-to-fix)
+  * [How to fix the issue that log messages are missing or incomplete in Arduino IDE's Serial Monitor?](./docs/envs/use_with_arduino.md#how-to-fix-the-issue-that-log-messages-are-missing-or-incomplete-in-arduino-ides-serial-monitor)
   * [Solution for screen drift issue when using ESP32-S3 to drive RGB LCD in Arduino IDE](./docs/envs/use_with_arduino.md#solution-for-screen-drift-issue-when-using-esp32-s3-to-drive-rgb-lcd-in-arduino-ide)
+  * [How to reduce Flash usage and speed up compilation when using ESP32_Display_Panel in Arduino IDE?](./docs/envs/use_with_arduino.md#how-to-reduce-flash-usage-and-speed-up-compilation-when-using-esp32_display_panel-in-arduino-ide)
+  * [How to avoid I2C re-initialization when using ESP32_Display_Panel in Arduino IDE (e.g., when using Wire library)?](./docs/envs/use_with_arduino.md#how-to-avoid-i2c-re-initialization-when-using-esp32_display_panel-in-arduino-ide-eg-when-using-wire-library)
 
 * [ESP-IDF](./docs/envs/use_with_idf.md#faq)
 

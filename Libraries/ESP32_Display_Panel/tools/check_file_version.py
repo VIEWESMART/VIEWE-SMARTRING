@@ -7,6 +7,7 @@ import re
 
 exclude_dirs = [
     './build',
+    './examples/platformio/lvgl_v8_port/.pio'
 ]
 internal_version_file = 'src/esp_panel_versions.h'
 include_files = [
@@ -85,7 +86,7 @@ def is_in_directory(file_path, directory):
 def extract_file_version(file_path, version_dict):
     file_contents = []
     content_str = ''
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         file_contents.append(file.readlines())
         for content in file_contents:
             content_str = ''.join(content)
@@ -104,7 +105,7 @@ def extract_file_version(file_path, version_dict):
 def extract_arduino_version(file_path):
     file_contents = []
     content_str = ''
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         file_contents.append(file.readlines())
         for content in file_contents:
             content_str = ''.join(content)

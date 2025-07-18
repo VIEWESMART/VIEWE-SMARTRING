@@ -92,6 +92,7 @@
         + defined(BOARD_JINGCAI_JC8048W550C) \
         /* Waveshare */ \
         + defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_1_85) \
+        + defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_1_85_C) \
         + defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_2_1) \
         + defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_4_3) \
         + defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_4_3_B) \
@@ -106,16 +107,17 @@
         + defined(BOARD_VIEWE_UEDX48480021_MD80E) \
         + defined(BOARD_VIEWE_UEDX48480021_MD80E_V2) \
         + defined(BOARD_VIEWE_UEDX48480021_MD80ET) \
+        + defined(BOARD_VIEWE_UEDX48480028_MD80ET) \
         + defined(BOARD_VIEWE_UEDX24320024E_WB_A) \
         + defined(BOARD_VIEWE_UEDX24320028E_WB_A) \
         + defined(BOARD_VIEWE_UEDX24320035E_WB_A) \
         + defined(BOARD_VIEWE_UEDX32480035E_WB_A) \
         + defined(BOARD_VIEWE_UEDX48270043E_WB_A) \
         + defined(BOARD_VIEWE_UEDX48480040E_WB_A) \
-        + defined(BOARD_VIEWE_UEDX48800043E_WB_A) \
         + defined(BOARD_VIEWE_UEDX80480043E_WB_A) \
         + defined(BOARD_VIEWE_UEDX80480050E_WB_A) \
         + defined(BOARD_VIEWE_UEDX80480050E_WB_A_2) \
+        + defined(BOARD_VIEWE_UEDX80480050E_AC_A) \
         + defined(BOARD_VIEWE_UEDX80480070E_WB_A) \
         > 1
         #error "Multiple boards enabled! Please check file `esp_panel_board_supported_conf.h` and make sure only one board is enabled."
@@ -167,6 +169,8 @@
     /* Waveshare */
     #elif defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_1_85)
         #include "waveshare/BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_1_85.h"
+    #elif defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_1_85_C)
+        #include "waveshare/BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_1_85_C.h"
     #elif defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_2_1)
         #include "waveshare/BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_2_1.h"
     #elif defined(BOARD_WAVESHARE_ESP32_S3_TOUCH_LCD_4_3)
@@ -192,8 +196,10 @@
         #include "viewe/BOARD_VIEWE_UEDX48480021_MD80E.h"
     #elif defined(BOARD_VIEWE_UEDX48480021_MD80E_V2)
         #include "viewe/BOARD_VIEWE_UEDX48480021_MD80E_V2.h"
-     #elif defined(BOARD_VIEWE_UEDX48480021_MD80ET)
+    #elif defined(BOARD_VIEWE_UEDX48480021_MD80ET)
         #include "viewe/BOARD_VIEWE_UEDX48480021_MD80ET.h"
+    #elif defined(BOARD_VIEWE_UEDX48480028_MD80ET)
+        #include "viewe/BOARD_VIEWE_UEDX48480028_MD80ET.h"
     #elif defined(BOARD_VIEWE_UEDX24320024E_WB_A)
         #include "viewe/BOARD_VIEWE_UEDX24320024E_WB_A.h"
     #elif defined(BOARD_VIEWE_UEDX24320028E_WB_A)
@@ -206,14 +212,14 @@
         #include "viewe/BOARD_VIEWE_UEDX48270043E_WB_A.h"
     #elif defined(BOARD_VIEWE_UEDX48480040E_WB_A)
         #include "viewe/BOARD_VIEWE_UEDX48480040E_WB_A.h"
-    #elif defined(BOARD_VIEWE_UEDX48800043E_WB_A)
-        #include "viewe/BOARD_VIEWE_UEDX48800043E_WB_A.h"
     #elif defined(BOARD_VIEWE_UEDX80480043E_WB_A)
         #include "viewe/BOARD_VIEWE_UEDX80480043E_WB_A.h"
     #elif defined(BOARD_VIEWE_UEDX80480050E_WB_A)
         #include "viewe/BOARD_VIEWE_UEDX80480050E_WB_A.h"
     #elif defined(BOARD_VIEWE_UEDX80480050E_WB_A_2)
         #include "viewe/BOARD_VIEWE_UEDX80480050E_WB_A_2.h"
+    #elif defined(BOARD_VIEWE_UEDX80480050E_AC_A)
+        #include "viewe/BOARD_VIEWE_UEDX80480050E_AC_A.h"
     #elif defined(BOARD_VIEWE_UEDX80480070E_WB_A)
         #include "viewe/BOARD_VIEWE_UEDX80480070E_WB_A.h"
     #else

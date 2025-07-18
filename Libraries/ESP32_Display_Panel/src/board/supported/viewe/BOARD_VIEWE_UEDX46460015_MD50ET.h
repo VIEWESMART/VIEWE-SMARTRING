@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 /**
- * @file   BOARD_UEDX24320024E_WB_A.h
- * @brief  Configuration file for Viewe UEDX24320024E-WB-A
+ * @file   BOARD_VIEWE_UEDX46460015_MD50ET.h
+ * @brief  Configuration file for Viewe UEDX46460015-MD50ET
  * @author Viewe@VIEWESMART
- * @link   https://viewedisplay.com/product/esp32-2-4-inch-240x320-rgb-ips-tft-display-touch-screen-arduino-lvgl-wifi-ble-uart-smart-module/
+ * @link   https://github.com/VIEWESMART/UEDX46460015-MD50ESP32-1.5inch-Touch-Knob-Display
  */
 
 #pragma once
@@ -167,7 +167,7 @@
 /**
  * @brief Touch controller selection
  */
-#define ESP_PANEL_BOARD_TOUCH_CONTROLLER        CST816S
+#define ESP_PANEL_BOARD_TOUCH_CONTROLLER        CST820
 
 /**
  * @brief Touch bus type selection
