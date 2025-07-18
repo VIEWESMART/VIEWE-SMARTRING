@@ -67,7 +67,7 @@ SMARTRING is a development board with square 1.75-inch 466 * 466 resolution disp
 
 * Touch Chip: CST9217
 * Bus communication protocol: IIC
-* For more details, please visit [Touch datasheet]()
+* For more details, please visit [Touch datasheet](https://github.com/VIEWESMART/VIEWE-SMARTRING/blob/main/datasheet/CST9217.pdf)
 
 ## PinOverview
 
