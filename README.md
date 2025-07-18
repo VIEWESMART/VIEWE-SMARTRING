@@ -6,18 +6,6 @@
 
 ## **English | [中文](./README_CN.md)**
 
-## Introduction to the Repository Directory
-
-```
-├── Libraries                 Library files required for the Arduino example  
-├── Schematic                 The circuit schematic of the product   
-├── examples                  Sample files, including the IDF framework and the Arduino framework
-├── image                     Product or sample project related images
-├── datasheet               Product specifications, including the IC or peripherals involved
-├── tools                     Burn tool and image conversion tool
-└── README.md                 This is the file you are currently reading,Give a brief introduction to the product
-```
-
 ## Version iteration:
 |   Development board Version   |  Screen size   |   Resolution  | Update date        |Update description|
 | :-------------------------------: | :-------------------------------: | :-------------------------------: | :-------------------------------: |:-------------------------------: |
