@@ -1,5 +1,7 @@
 # 烧录流程说明
 
+[English](https://github.com/VIEWESMART/VIEWE-SMARTRING/blob/main/firmware/README.md)
+
 ## 1、打开 ESP32 烧录工具
 <img width="892" height="260" alt="image" src="https://github.com/user-attachments/assets/c1f8b64d-d44f-44ce-8f99-ff4d4dac3ba6" />
 
