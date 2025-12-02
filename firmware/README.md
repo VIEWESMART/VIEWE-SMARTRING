@@ -1,6 +1,6 @@
 # Instructions for Burning Process
 
-[English](https://github.com/VIEWESMART/VIEWE-SMARTRING/blob/main/firmware/README_CN.md)
+[中文](https://github.com/VIEWESMART/VIEWE-SMARTRING/blob/main/firmware/README_CN.md)
 
 ## 1. Open the ESP32 burning tool
 <img width="892" height="260" alt="image" src="https://github.com/user-attachments/assets/c1f8b64d-d44f-44ce-8f99-ff4d4dac3ba6" />
